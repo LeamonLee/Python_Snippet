@@ -1,0 +1,20 @@
+{% extends "base_layout.html" %}
+
+{% block content %}
+    <form method="post" action="">
+        {% csrf_token %}
+        Username : <input type="text" name="username"><br>
+        Email : <input type="text" name="email"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+    {% for dict in context.dicts %}
+        <ul>
+            <li>{{dict.username}}</li>
+            <li>{{dict.email}}</li>
+        </ul>
+    {% endfor %}
+
+{% endblock %}    
+    
+    

@@ -1,0 +1,5 @@
+
+DINT = IntegerField                     # -2147483648 to 2147483647
+UDINT = PositiveIntegerField            # 0 to 2147483647
+int = SmallIntegerField                 # -32768 to 32767
+UINT = PositiveSmallIntegerField        # 0 to 32767

@@ -1,0 +1,22 @@
+.attendanceTable th{
+    min-width: 120px;
+    text-align: center;
+}
+
+.attendanceTable td{
+    min-width: 120px;
+    text-align: center;
+}
+
+/* tr + th{
+    min-width:0;
+}
+
+tr + td{
+    min-width:0;
+} */
+
+.attendanceTable .first-col{
+    min-width:0;
+    
+}

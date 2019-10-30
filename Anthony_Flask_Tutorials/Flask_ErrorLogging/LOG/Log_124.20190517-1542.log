@@ -1,0 +1,40 @@
+[2019-05-17 15:42:34] INFO     Hello index()! (app.py:index():75)
+[2019-05-17 15:42:34] ERROR    Exception on / [GET] (app.py:log_exception():1761)
+Traceback (most recent call last):
+  File "C:\Users\Leamon\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leamon\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leamon\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leamon\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leamon\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leamon\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\app.py", line 76, in index
+    return 1 / 0             # Just a contrived example
+ZeroDivisionError: division by zero
+[2019-05-17 15:42:34] INFO     Soemthing wrong happened! (app.py:internal_error():66)
+[2019-05-17 15:42:34] ERROR    division by zero (app.py:internal_error():68)
+[2019-05-17 15:42:35] INFO     Hello index()! (app.py:index():75)
+[2019-05-17 15:42:35] ERROR    Exception on / [GET] (app.py:log_exception():1761)
+Traceback (most recent call last):
+  File "C:\Users\Leamon\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Leamon\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Leamon\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Leamon\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Leamon\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Leamon\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ".\app.py", line 76, in index
+    return 1 / 0             # Just a contrived example
+ZeroDivisionError: division by zero
+[2019-05-17 15:42:35] INFO     Soemthing wrong happened! (app.py:internal_error():66)
+[2019-05-17 15:42:35] ERROR    division by zero (app.py:internal_error():68)

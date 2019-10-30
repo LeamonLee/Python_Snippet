@@ -1,0 +1,15 @@
+[Unit]
+Description=HUD.service
+After=network.target network-online.target
+
+[Service]
+Type=simple
+User=user
+Group=user
+Restart=always
+ExecStartPre=/bin/mkdir -p /var/run/HUD.service
+PIDFile=/var/run/HUD.service/service.pid
+ExecStart=/usr/bin/python3 /home/user/iOT/HUD.py
+
+[Install]
+WantedBy=multi-user.target

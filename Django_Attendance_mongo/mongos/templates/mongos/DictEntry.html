@@ -1,0 +1,12 @@
+{% extends "base_layout.html" %}
+
+{% block content %}
+    {% for dict in dicts %}
+        {{dict.headline}}
+        <ul>
+            {% for key, value in dict.blog.items %} 
+            <li>{{key}} - {{value}}</li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+{% endblock content %}

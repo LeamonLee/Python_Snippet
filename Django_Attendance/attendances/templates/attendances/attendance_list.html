@@ -1,0 +1,86 @@
+{% extends "base_layout.html" %}
+<!-- {% load static from staticfiles %} -->
+
+{% block link_external_files %}
+    <link rel="stylesheet" type="text/css" href="{% static 'attendances/myTable.css' %}"/>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Attendance record</h1>
+        <p>Welcome to use Attendance management system</p>
+        
+        <form method="GET" id="date_search_form" class="mb-2">
+            {% csrf_token %}
+            {{ date_picker_form }}
+            <button class="btn btn-outline-info mb-1" type="submit">Search</button>
+        </form>
+
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr class="attendanceTable">
+                    <th class="first-col" scope="col"></th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Office start</th>
+                    <th scope="col">Off work</th>
+                    <th scope="col">Clocked in</th>
+                    <th scope="col">Clocked out</th>
+                    <th scope="col">Clockin_status</th>
+                    <th scope="col">Clockout_status</th>
+                    <th scope="col">Total_working_hours</th>
+                    <th scope="col">Abnormal_hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% if object_list %}
+                    {% for Attendance in object_list %}
+                        <tr class="attendanceTable">
+                            <td class="first-col" scope="row">{{ forloop.counter }}</td>
+                            <td>{{Attendance.date|date:"Y/m/d"}}</td>
+                            <td>{{Attendance.office_hours|time:"H:i"}}</td>
+                            <td>{{Attendance.off_hours|time:"H:i"}}</td>
+                            <td>{{Attendance.clockin_time|time:"H:i"}}</td>
+                            <td>{{Attendance.clockout_time|time:"H:i"}}</td>
+                            <td>{{Attendance.clockin_status}}</td>
+                            <td>{{Attendance.clockout_status}}</td>
+                            <td>{{Attendance.total_working_hours}}</td>
+                            <td>{{Attendance.abnormal_hours}}</td>
+                        </tr>
+                    {% endfor %}
+                {%endif%}
+            </tbody>
+        </table>
+        <div>
+            {% if not object_list %}
+                <h4 style="color:red;">There are no results that match your search.</h4>
+            {%endif%}
+
+            {% if is_paginated %}
+
+                {% if page_obj.has_previous %}
+                    <a class="btn btn-outline-info mb-4" href="?page=1">First</a>
+                    <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+                {% endif %}
+
+                {% for num in page_obj.paginator.page_range %}
+                    {% if page_obj.number == num %}
+                    <a class="btn btn-info mb-4" href="?page={{ num }}">{{ num }}</a>
+                    {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                    <a class="btn btn-outline-info mb-4" href="?page={{ num }}">{{ num }}</a>
+                    {% endif %}
+                {% endfor %}
+
+                {% if page_obj.has_next %}
+                    <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.next_page_number }}">Next</a>
+                    <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
+                {% endif %}
+
+            {% endif %}
+        </div>
+    </div>
+{% endblock content %}
+
+{% block link_javascript_files %}
+    <script type="text/javascript" src="{% static 'attendances/DTMPicker.js' %}"></script>
+    <script type="text/javascript" src="{% static 'attendances/DTMValidation.js' %}"></script>
+{% endblock link_javascript_files %}

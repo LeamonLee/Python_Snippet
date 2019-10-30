@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "C:\\Leamon\\PythonExercise\\Django-Blog-API\\Advancing-the-Blog\\project_env\\Scripts\\python.exe",
+    "python.autoComplete.extraPaths": [
+       "C:\\Leamon\\PythonExercise\\Django-Blog-API\\Advancing-the-Blog\\project_env\\Lib\\site-packages"
+    ]
+}

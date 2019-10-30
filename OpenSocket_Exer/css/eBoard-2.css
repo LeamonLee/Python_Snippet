@@ -1,0 +1,157 @@
+/* Overwrite Bootstrap class */
+div.myContent.container-fluid {
+    padding-right: 3%;
+    padding-left: 3%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+/* End Overwrite Bootstrap class */
+
+body{
+    /* background: url(../images/background.jpg); */
+    background-size:cover
+}
+#mylogo{
+    width: 200px;
+    height:75px;
+}
+
+.productItem{
+    background-color:rgba(18,35,40,0.6);
+    margin-bottom:5%;
+    /* opacity:1; */
+}
+
+/* .productItem:hover{
+    opacity:0.7;
+} */
+
+.myTitle{
+    /* display:block; */
+    border-bottom:1px solid #ffffff;
+    padding:1% 0;
+    margin:1% 0;
+    
+}
+
+.myTitle > img{
+    display:inline-block;
+    vertical-align:middle;
+    width:36px;
+    height:42px;
+}
+
+.myTitle > p{
+    display:inline-block;
+    vertical-align:middle;
+    font-size:33px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:Bold;
+    margin:0;
+    color:#ffffff;
+}
+
+.sub-container{
+    background:transparent;
+    
+}
+.myPanel{
+    color:#ffffff;
+}
+.myPanel-heading{
+    /* padding:1%;
+    margin:1%; */
+    font-size:32px;
+    opacity:0.6;
+}
+
+.myPanel-body{
+    font-size:47px;
+    font-weight: Bold;
+} 
+.myPanel-footer{
+    font-size:24px;
+}
+
+/* Progress bar */
+.myProgressBar{
+    position:relative;
+}
+
+.myProgressBar-Text, .myProgressBar-Speed, .myProgressBar-CurrentLen{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:#ffffff;
+}
+
+.myProgressBar-Text-icon{
+    text-align:center;
+    /* width:24px;
+    height:24px; */
+}
+
+.myProgressBar-Text-heading{
+    text-align:center;
+    font-size:24px;
+    opacity:0.6;
+}
+.myProgressBar-Text-body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:Bold;
+    font-size: 65px;
+    text-align:center;
+}
+.myProgressBar-Text-footer{
+    text-align:center;
+    font-size:20px;
+}
+
+
+/* myGaugeMeter */
+.myGaugeMeter{
+    position:relative;
+}
+
+.myGaugeMeter-Text, .myGaugeMeter-Speed{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:#ffffff;
+}
+
+.myGaugeMeter-Text-heading{
+    text-align:center;
+    font-size:24px;
+    opacity:0.6;
+}
+.myGaugeMeter-Text-body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:Bold;
+    font-size: 65px;
+    text-align:center;
+}
+.myGaugeMeter-Text-footer{
+    text-align:center;
+    font-size:20px;
+}
+
+#myTime{
+    
+    font-size:24px;
+    line-height:24px;
+    height:24px;
+    /* top:calc(50%-8px); */
+}
+
+#myTime > p{
+    font-size:24px;
+    line-height:24px;
+    color:#fff;
+    /* margin-bottom:0; */
+    padding-right:5%;
+    /* padding-top:15px;
+    padding-bottom:15px; */
+}

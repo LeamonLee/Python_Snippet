@@ -1,0 +1,46 @@
+{% extends "base_layout.html" %}
+<!-- {% load static from staticfiles %} -->
+
+{% block link_external_files %}
+    <link rel="stylesheet" type="text/css" href="{% static 'attendances/myTable.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Attendance record</h1>
+        <p>Welcome to use Attendance record system</p>
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Office_hours</th>
+                    <th scope="col">Off_hours</th>
+                    <th scope="col">Clockin_time</th>
+                    <th scope="col">Clockout_time</th>
+                    <th scope="col">Clockin_status</th>
+                    <th scope="col">Clockout_status</th>
+                    <th scope="col">Total_working_hours</th>
+                    <th scope="col">Abnormal_hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for Attendance in Attendances %}
+                    <tr>
+                        <td scope="row">{{ forloop.counter }}</td>
+                        <td>{{Attendance.date|date:"Y/m/d"}}</td>
+                        <td>{{Attendance.office_hours|time:"H:i"}}</td>
+                        <td>{{Attendance.off_hours|time:"H:i"}}</td>
+                        <td>{{Attendance.clockin_time|time:"H:i"}}</td>
+                        <td>{{Attendance.clockout_time|time:"H:i"}}</td>
+                        <td>{{Attendance.clockin_status}}</td>
+                        <td>{{Attendance.clockout_status}}</td>
+                        <td>{{Attendance.total_working_hours}}</td>
+                        <td>{{Attendance.abnormal_hours}}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+    </div>
+{% endblock %}

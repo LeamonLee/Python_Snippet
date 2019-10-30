@@ -1,0 +1,12 @@
+{% extends "base_layout.html" %}
+
+{% block content %}
+    {{order}}
+    <form method="post" enctype = "multipart/form-data">
+        {% csrf_token %}
+        <label>Upload a cav file</label>
+        <input type="file" name="file">
+        <p>Only accepts CSV file</p>
+        <button type="submit">Upload</button>
+    </form>    
+{% endblock content %}

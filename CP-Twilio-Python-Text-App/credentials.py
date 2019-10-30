@@ -1,0 +1,5 @@
+account_sid = "AC5dfb1226e100ceb7e3ee4e5e5b85fca2"
+auth_token = "58ce70a3dd395951c6281bd2cda07f4f"
+# my_cell = "+886973962968"
+my_cell = "+886966603307"
+my_twilio = "+12512610860"

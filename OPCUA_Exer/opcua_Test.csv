@@ -1,0 +1,16 @@
+NodeName,NodeId
+N0.1,ns=3;s="Opuca_DB"."Count_A"."N0.1"
+N0.2,ns=3;s="Opuca_DB"."Count_A"."N0.2"
+N0.3,ns=3;s="Opuca_DB"."Count_A"."N0.3"
+N0.3,ns=3;s="Opuca_DB"."Count_A"."N0.dfdsfdsf3"
+Count_B,ns=3;s="Opuca_DB"."Count_B"
+Fake_Counter_1.0,ns=3;s="Opuca_DB"."Fake_Counter_1"[0]
+Fake_Counter_1.1,ns=3;s="Opuca_DB"."Fake_Counter_1"[1]
+Fake_Counter_1.2,ns=3;s="Opuca_DB"."Fake_Counter_1"[2]
+Fake_Counter_1.3,ns=3;s="Opuca_DB"."Fake_Counter_1"[3]
+Fake_Counter_1.4,ns=3;s="Opuca_DB"."Fake_Counter_1"[4]
+Fake_Counter_1.5,ns=3;s="Opuca_DB"."Fake_Counter_1"[5]
+Fake_Counter_1.6,ns=3;s="Opuca_DB"."Fake_Counter_1"[6]
+Fake_Counter_1.7,ns=3;s="Opuca_DB"."Fake_Counter_1"[7]
+Fake_Counter_1.8,ns=3;s="Opuca_DB"."Fake_Counter_1"[8]
+Fake_Counter_1.9,ns=3;s="Opuca_DB"."Fake_Counter_1"[9]

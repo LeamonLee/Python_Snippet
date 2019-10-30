@@ -1,0 +1,7 @@
+{
+    "python.pythonPath": "C:\\Users\\Leamon\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe",
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#f00", // red color hexadecimal code
+        "editor.selectionHighlightBackground": "#990707" // white hex code
+    }
+}

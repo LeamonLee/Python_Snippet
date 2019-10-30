@@ -1,0 +1,468 @@
+"From_Customer_1                 ""FromCus_1""   0.0                                  False    True       True True      False"
+001_set_sync_speed        Real          0.0          0.0                     False    True       True   True    False                ANL_VSync
+002_Actual_sync_speed     Real          4.0          0.0                     False    True       True   True    False                MES_VAbz
+003_set_Reel_length       Real          8.0          0.0                     False    True       True   True    False                SOL_LenSp
+004_Actual_reel_length    Real          12.0         0.0                     False    True       True   True    False                MES_LenSp
+006_Line_Status           Real          16.0         0.0                     False    True       True   True    False                ANL_Stat
+007_QC_Status             Real          20.0         0.0                     False    True       True   True    False                QSS_StatAct
+008_Dia_controller_sta‐   Real          24.0         0.0                     False    True       True   True    False                ANL_ProdStat
+tus
+009_login_status          Real          28.0         0.0                     False    True       True True      False                ANL_ActUserLevel
+011_Date                  DTL           32.0         DTL#1970-01-01-00:00:00 False    True       True True      False
+YEAR                  UInt           32.0         1970                    False    True       True   True    False
+MONTH                 USInt          34.0         1                       False    True       True   True    False
+DAY                   USInt          35.0         1                       False    True       True   True    False
+WEEKDAY               USInt          36.0         5                       False    True       True   True    False
+HOUR                  USInt          37.0         0                       False    True       True   True    False
+MINUTE                USInt          38.0         0                       False    True       True   True    False
+SECOND                USInt          39.0         0                       False    True       True   True    False
+NANOSECOND            UDInt          40.0         0                       False    True       True   True    False
+012_Reserve              Real           44.0         0.0                     False    True       True   True    False
+013_Ex1_set_speed        Real           48.0         0.0                     False    True       True   True    False                EXT1_SpeedSync
+014_Ex1_Actual_speed     Real           52.0         0.0                     False    True       True   True    False                EXT1_iSpeed
+015_Ex1_motor_load       Real           56.0         0.0                     False    True       True   True    False                EXT1_iLoad
+016_Ex1_Melt_Pressure Real              60.0         0.0                     False    True       True   True    False                EXT1_iPresMelt1
+017_Ex1_Melt_tempera‐ Real              64.0         0.0                     False    True       True   True    False                EXT1_iTempMelt1
+ture
+018_Ex1_set_speed        Real           68.0         0.0                     False    True       True   True    False                EXT2_SpeedSync
+019_Ex2_Actual_speed     Real           72.0         0.0                     False    True       True   True    False                EXT2_iSpeed
+020_Ex2_motor_load       Real           76.0         0.0                     False    True       True   True    False                EXT2_iLoad
+021_Ex2_Melt_Pressure Real              80.0         0.0                     False    True       True   True    False                EXT2_iPresMelt1
+022_Ex2_Melt_tempera‐ Real              84.0         0.0                     False    True       True   True    False                EXT2_iTempMelt1
+ture
+023_P/off_set_length     Real           88.0         0.0                     False    True       True   True    False                ANL_NomAbwLen
+024_p/off_actual_length Real            92.0         0.0                     False    True       True   True    False                ANL_ActAbwLen
+025_Last_Reel_Length     Real           96.0         0.0                     False    True       True   True    False                MES_LenSpOld
+026_Hot_Spark_set_volt‐ Real            100.0        0.0                     False    True       True   True    False                MDV2_NomSparkSpg
+age
+027_Hot_spark_ac‐        Real           104.0        0.0                     False    True       True True      False                MDV2_iVoltage
+tual_voltage
+028_hot_spark_count      Real           108.0        0.0                     False    True       True True      False                MES_Spark2
+029_Cold_Spark_set_volt‐ Real           112.0        0.0                     False    True       True True      False                MDV1_NomSparkSpg
+age
+030_Cold_spark_ac‐       Real           116.0        0.0                     False    True       True True      False                MDV1_iVoltage
+tual_voltage
+031_Cold_spark_count     Real           120.0        0.0                     False    True       True True      False                MES_Spark
+032_Chalk_Applica‐       Real           124.0        0.0                     False    True       True True      False                H9P2_iOn
+tor_Status
+033_Dryer_Status         Real           128.0        0.0                     False    True       True True      False                ANL_Dryer
+034_Burner_Status        Real           132.0        0.0                     False    True       True True      False                ANL_iBurnerOn
+035_Ex1_Gear_Box_Temp Real              136.0        0.0                     False    True       True True      False                EXT1_iTempMot
+.
+036_Ex1_BZ1_set_tem‐ Real               140.0        0.0                     False    True       True True      False                EXT1_oTempZ7
+perature
+037_Ex1_BZ2_set_tem‐ Real               144.0        0.0                     False    True       True True      False                EXT1_oTempZ8
+perature
+038_Ex1_CZ1_set_tem‐ Real               148.0        0.0                     False    True       True True      False                EXT1_oTempZ1
+perature
+039_Ex1_CZ2_set_tem‐ Real               152.0        0.0                     False    True       True True      False                EXT1_oTempZ2
+perature
+040_Ex1_CZ3_set_tem‐ Real               156.0        0.0                     False    True       True True      False                EXT1_oTempZ3
+perature
+ Totally Integrated
+Automation Portal
+
+Name                             Datentyp      Offset   Startwert   Rema‐   Erreich‐   Schr Sichtbar Einstell‐   Überwa‐ Kommentar
+nenz    bar aus    eib‐ in HMI   wert        chung
+HMI/OPC    bar Engineer‐
+UA         aus ing
+HMI/
+OPC
+UA
+041_Ex1_FZ1_set_tem‐   Real          160.0    0.0         False   True       True True     False               EXT1_oTempFl1
+perature
+042_Ex1_HZ1_set_tem‐   Real          164.0    0.0         False   True       True True      False              EXT1_oTempH1
+perature
+043_Ex1_HZ2_set_tem‐   Real          168.0    0.0         False   True       True True      False              EXT1_oTempH2
+perature
+044_Ex1_HZ3_set_tem‐   Real          172.0    0.0         False   True       True True      False              EXT1_oTempH3
+perature
+045_Ex1_HZ4_set_tem‐   Real          176.0    0.0         False   True       True True      False              EXT1_oTempH4
+perature
+046_Ex1_HZ5_set_tem‐   Real          180.0    0.0         False   True       True True      False              EXT1_oTempH5
+perature
+047_Ex1_BZ1_Ac‐        Real          184.0    0.0         False   True       True True      False              EXT1_iTempZ7
+tual_temperature
+048_Ex1_BZ2_Ac‐        Real          188.0    0.0         False   True       True True      False              EXT1_iTempZ8
+tual_temperature
+049_Ex1_CZ1_Ac‐        Real          192.0    0.0         False   True       True True      False              EXT1_iTempZ1
+tual_temperature
+050_Ex1_CZ2_Ac‐        Real          196.0    0.0         False   True       True True      False              EXT1_iTempZ2
+tual_temperature
+051_Ex1_CZ3_Ac‐        Real          200.0    0.0         False   True       True True      False              EXT1_iTempZ3
+tual_temperature
+052_Ex1_FZ1_Ac‐        Real          204.0    0.0         False   True       True True      False              EXT1_iTempFl1
+tual_temperature
+"From_Customer_2           ""FromCus_2""   208.0                False   True       True True      False"
+053_Ex1_HZ1_Ac‐        Real           208.0    0.0         False   True       False True     False              EXT1_iTempH1
+tual_temperature
+054_Ex1_HZ2_Ac‐        Real           212.0    0.0         False   True       False True     False              EXT1_iTempH2
+tual_temperature
+055_Ex1_HZ3_Ac‐        Real           216.0    0.0         False   True       False True     False              EXT1_iTempH3
+tual_temperature
+056_Ex1_HZ4_Ac‐        Real           220.0    0.0         False   True       False True     False              EXT1_iTempH4
+tual_temperature
+057_Ex1_HZ5_Ac‐        Real           224.0    0.0         False   True       False True     False              EXT1_iTempH5
+tual_temperature
+058_Ex1_BZ1_Heating/ Real             228.0    0.0         False   True       False True     False              EXT1_OP15
+cooling_Status
+059_Ex1_BZ2__Heating/ Real            232.0    0.0         False   True       False True     False              EXT1_OP7
+cooling_Status
+060_Ex1_CZ1__Heating/ Real            236.0    0.0         False   True       False True     False              EXT1_OP1
+cooling_Status
+061_Ex1_CZ2__Heating/ Real            240.0    0.0         False   True       False True     False              EXT1_OP2
+cooling_Status
+062_Ex1_CZ3__Heating/ Real            244.0    0.0         False   True       False True     False              EXT1_OP3
+cooling_Status
+063_Ex1_FZ1__Heating/ Real            248.0    0.0         False   True       False True     False              EXT1_OP8
+cooling_Status
+064_Ex1_HZ1__Heating/ Real            252.0    0.0         False   True       False True     False              EXT1_OP9
+cooling_Status
+065_Ex1_HZ2__Heating/ Real            256.0    0.0         False   True       False True     False              EXT1_OP10
+cooling_Status
+066_Ex1_HZ3__Heating/ Real            260.0    0.0         False   True       False True     False              EXT1_OP11
+cooling_Status
+067_Ex1_HZ4__Heating/ Real            264.0    0.0         False   True       False True     False              EXT1_OP12
+cooling_Status
+068_Ex1_HZ5__Heating/ Real            268.0    0.0         False   True       False True     False              EXT1_OP13
+cooling_Status
+069_Ex1_Cool‐          Real           272.0    0.0         False   True       False True     False              EXT1_oTempT1
+ing_unit_set_temp.
+070_Ex1_Cool‐          Real           276.0    0.0         False   True       False True     False              EXT1_iTempT1
+ing_unit_Actual_temp.
+071_Ex1_LH_Colour_dos‐ Real           280.0    0.0         False   True       False True     False              EXT1_oPlas1
+ing
+072_Ex1_RH_Colour_dos‐ Real           284.0    0.0         False   True       False True     False              EXT1_oPlas2
+ing
+073_Ex2_Gear_Box_Temp Real            288.0    0.0         False   True       False True     False              EXT2_iTempMot
+.
+074_Ex2_BZ1_set_tem‐ Real             292.0    0.0         False   True       False True     False              EXT2_oTempZ7
+perature
+075_Ex2_BZ2_set_tem‐ Real             296.0    0.0         False   True       False True     False              EXT2_oTempZ8
+perature
+076_Ex2_CZ1_set_tem‐ Real             300.0    0.0         False   True       False True     False              EXT2_oTempZ1
+perature
+077_Ex2_CZ2_set_tem‐ Real             304.0    0.0         False   True       False True     False              EXT2_oTempZ2
+perature
+078_Ex2_CZ3_set_tem‐ Real             308.0    0.0         False   True       False True     False              EXT2_oTempZ3
+perature
+079_Ex2_FZ1_set_tem‐ Real             312.0    0.0         False   True       False True     False              EXT2_oTempFl1
+perature
+080_Ex2_HZ1_set_tem‐ Real             316.0    0.0         False   True       False True     False              EXT2_oTempH1
+perature
+ Totally Integrated
+Automation Portal
+
+Name                              Datentyp      Offset   Startwert   Rema‐   Erreich‐   Schr Sichtbar Einstell‐   Überwa‐ Kommentar
+nenz    bar aus    eib‐ in HMI   wert        chung
+HMI/OPC    bar Engineer‐
+UA         aus ing
+HMI/
+OPC
+UA
+081_Ex2_HZ2_set_tem‐    Real          320.0    0.0         False   True       False True    False               EXT2_oTempH2
+perature
+082_Ex2_HZ3_set_tem‐    Real          324.0    0.0         False   True       False True     False              EXT2_oTempH3
+perature
+083_Ex2_BZ1_Ac‐         Real          328.0    0.0         False   True       False True     False              EXT2_iTempZ7
+tual_temperature
+084_Ex2_BZ2_Ac‐         Real          332.0    0.0         False   True       False True     False              EXT2_iTempZ8
+tual_temperature
+085_Ex2_CZ1_Ac‐         Real          336.0    0.0         False   True       False True     False              EXT2_iTempZ1
+tual_temperature
+086_Ex2_CZ2_Ac‐         Real          340.0    0.0         False   True       False True     False              EXT2_iTempZ2
+tual_temperature
+087_Ex2_CZ3_Ac‐         Real          344.0    0.0         False   True       False True     False              EXT2_iTempZ3
+tual_temperature
+088_Ex2_FZ1_Ac‐         Real          348.0    0.0         False   True       False True     False              EXT2_iTempFl1
+tual_temperature
+089_Ex2_HZ1_Ac‐         Real          352.0    0.0         False   True       False True     False              EXT2_iTempH1
+tual_temperature
+090_Ex2_HZ2_Ac‐         Real          356.0    0.0         False   True       False True     False              EXT2_iTempH2
+tual_temperature
+091_Ex2_HZ3_Ac‐         Real          360.0    0.0         False   True       False True     False              EXT2_iTempH3
+tual_temperature
+092_Ex2_BZ1_Heating/    Real          364.0    0.0         False   True       False True     False              EXT2_OP15
+cooling_Status
+093_Ex2_BZ2__Heating/   Real          368.0    0.0         False   True       False True     False              EXT2_OP7
+cooling_Status
+094_Ex2_CZ1__Heating/   Real          372.0    0.0         False   True       False True     False              EXT2_OP1
+cooling_Status
+095_Ex2_CZ2__Heating/   Real          376.0    0.0         False   True       False True     False              EXT2_OP2
+cooling_Status
+096_Ex2_CZ3__Heating/   Real          380.0    0.0         False   True       False True     False              EXT2_OP3
+cooling_Status
+097_Ex2_FZ1__Heating/   Real          384.0    0.0         False   True       False True     False              EXT2_OP8
+cooling_Status
+098_Ex2_HZ1__Heating/   Real          388.0    0.0         False   True       False True     False              EXT2_OP9
+cooling_Status
+099_Ex2_HZ2__Heating/   Real          392.0    0.0         False   True       False True     False              EXT2_OP10
+cooling_Status
+100_Ex2_HZ3__Heating/   Real          396.0    0.0         False   True       False True     False              EXT2_OP11
+cooling_Status
+101_Ex2_Cool‐           Real          400.0    0.0         False   True       False True     False              EXT2_oTempT1
+ing_unit_set_temp.
+102_Ex2_Cool‐           Real          404.0    0.0         False   True       False True     False              EXT2_iTempT1
+ing_unit_Actual_temp.
+"From_Customer_3            ""FromCus_3""   408.0                False   True       True True      False"
+103_Ex2_LH_Colour_dos‐ Real            408.0    0.0         False   True       True True      False              EXT2_oPlas1
+ing
+104_Ex2_RH_Colour_dos‐ Real            412.0    0.0         False   True       True True      False              EXT2_oPlas2
+ing
+105_Hot_y_axis_set_dia_ Real           416.0    0.0         False   True       True True      False              SOL_DWarmY
+106_Hot_y_axis_ac‐       Real          420.0    0.0         False   True       True True      False              MES_DWarmY
+tual_dia_
+107_Hot_x_axis_set_dia_ Real           424.0    0.0         False   True       True True      False              SOL_DWarmX
+108_Hot_x_axis_ac‐       Real          428.0    0.0         False   True       True True      False              MES_DWarmX
+tual_dia_
+109_Cold_y_axis_set_dia_ Real          432.0    0.0         False   True       True True      False              SOL_DKaltY
+110_Cold_y_axis_ac‐      Real          436.0    0.0         False   True       True True      False              MES_DKaltY
+tual_dia_
+111_Cold_x_axis_set_dia_ Real          440.0    0.0         False   True       True True      False              SOL_DKaltX
+112_Cold_x_axis_ac‐      Real          444.0    0.0         False   True       True True      False              MES_DKaltX
+tual_dia_
+113_Cold_dia_aver‐       Real          448.0    0.0         False   True       True True      False              QSS3_AverageVal
+age_vale
+114_cold_dia_stand‐      Real          452.0    0.0         False   True       True True      False              QSS3_S
+ard_deviation
+115_cold_dia_maxi‐       Real          456.0    0.0         False   True       True True      False              QSS3_MaxVal
+mum_value
+116_cold_dia_min._value Real           460.0    0.0         False   True       True   True    False              QSS3_MinVal
+117_Cp_value             Real          464.0    0.0         False   True       True   True    False              QSS3_CP
+118_Cpk_value            Real          468.0    0.0         False   True       True   True    False              QSS3_CPK
+119_Cm_value             Real          472.0    0.0         False   True       True   True    False              QSS3_CM
+120_Cmk_value            Real          476.0    0.0         False   True       True   True    False              QSS3_CMK
+121_Cool‐                Real          480.0    0.0         False   True       True   True    False              H9P1_C_oTempZ1
+ing_through_tempera‐
+ture_tank_1_set_value
+122_Cool‐                Real          484.0    0.0         False   True       True True      False              H9P1_C_iTTank1
+ing_through_tempera‐
+ture_tank_1_Actual_value
+123_CAP2_Mo‐             Real          488.0    0.0         False   True       True True      False              BAZ2_oLoad
+tor_load_set_value
+ Totally Integrated
+Automation Portal
+
+Name                                Datentyp      Offset   Startwert   Rema‐   Erreich‐   Schr Sichtbar Einstell‐   Überwa‐ Kommentar
+nenz    bar aus    eib‐ in HMI   wert        chung
+HMI/OPC    bar Engineer‐
+UA         aus ing
+HMI/
+OPC
+UA
+124_CAP2_Mo‐              Real          492.0    0.0         False   True       True True     False               BAZ2_iLoad
+tor_load_Actual_value
+125_ACC_Control_mode      Real          496.0    0.0         False   True       True True      False              SPE2_TensMod
+126_ACC2_set_mo‐          Real          500.0    0.0         False   True       True True      False              SPE2_oLoad
+tor_load
+127_ACC2_actual_mo‐       Real          504.0    0.0         False   True       True True      False              SPE2_iLoad
+tor_load
+128_ACC2_set_nomi‐        Real          508.0    0.0         False   True       True True      False              SPE2_oPosSet
+nal_position
+129_ACC2_actual_posi‐     Real          512.0    0.0         False   True       True True      False              SPE2_iAccu
+tion
+130_ACC2_contents         Real          516.0    0.0         False   True       True True      False              SPE2_AccuMet
+131_TUP2_Tension_con‐     Real          520.0    0.0         False   True       True True      False              TUP2_TensMod
+trol_mode
+132_TUP2_motor_load       Real          524.0    0.0         False   True       True True      False              TUP2_iLoad
+133_TUP2_traverse_feed    Real          528.0    0.0         False   True       True True      False              TUP2_oTravFeed
+135_TUP2_traverse_posi‐   Real          532.0    0.0         False   True       True True      False              TUP2_iTravPos
+tion
+136_TUP1_Tension_con‐     Real          536.0    0.0         False   True       True True      False              TUP1_TensMod
+trol_mode
+137_TUP1_motor_load       Real          540.0    0.0         False   True       True True      False              TUP1_iLoad
+138_TUP1_dancer_pres‐     Real          544.0    0.0         False   True       True True      False              TUP1_oDancPress
+sure
+139_TUP1_traverse_feed    Real          548.0    0.0         False   True       True True      False              TUP1_oTravFeed
+141_TUP1_traverse_posi‐   Real          552.0    0.0         False   True       True True      False              TUP1_iTravPos
+tion
+142_Active_Take-up        Real          556.0    0.0         False   True       True True      False              ANL_AufwAct
+143_POF1_preselection     Real          560.0    0.0         False   True       True True      False              POF1_Vorw
+144_POF1_control_mode     Real          564.0    0.0         False   True       False True     False              POF1_TensMod
+145_POF1_set_mo‐          Real          568.0    0.0         False   True       False True     False              POF1_oLoad
+tor_load
+146_POF1_Actual_mo‐       Real          572.0    0.0         False   True       False True     False              POF1_iLoad
+tor_load
+147_POF1_dancer_pres‐     Real          576.0    0.0         False   True       False True     False              POF1_oDancPress
+sure
+148_CAP1_preselection     Real          580.0    0.0         False   True       False True     False              BAZ1_Vorw
+149_CAP1_control_mode     Real          584.0    0.0         False   True       False True     False              BAZ1_TensMod
+150_CAP1_set_mo‐          Real          588.0    0.0         False   True       False True     False              BAZ1_oLoad
+tor_load
+151_CAP1_actual_mo‐       Real          592.0    0.0         False   True       False True     False              BAZ1_iLoad
+tor_load
+152_POF2_preselection     Real          596.0    0.0         False   True       False True     False              POF2_Vorw
+153_POF2_Actual_mo‐       Real          600.0    0.0         False   True       False True     False              POF2_iLoad
+tor_load
+154_POF2_set_danc‐        Real          604.0    0.0         False   True       False True     False              POF2_oDancPress
+er_pressure
+"From_Customer_4              ""FromCus_4""   608.0                False   True       True True      False"
+155_POF2_actual_danc‐      Real          608.0    0.0         False   True       True True      False              POF2_DancPress
+er_pressure
+156_POF3_preselection      Real          612.0    0.0         False   True       True True      False              POF3_Vorw
+157_POF3_Actual_mo‐        Real          616.0    0.0         False   True       True True      False              POF3_iLoad
+tor_load
+158_POF3_set_danc‐         Real          620.0    0.0         False   True       True True      False              POF3_oDancPress
+er_pressure
+159_POF3_actual_danc‐      Real          624.0    0.0         False   True       True True      False              POF3_DancPress
+er_pressure
+160_MBD1_voltage_L1        Real          628.0    0.0         False   True       True   True    False              MBD1_iVoltageL1
+161_MBD1_voltage_L2        Real          632.0    0.0         False   True       True   True    False              MBD1_iVoltageL2
+162_MBD1_voltage_L3        Real          636.0    0.0         False   True       True   True    False              MBD1_iVoltageL3
+163_MBD1_min._volt‐        Real          640.0    0.0         False   True       True   True    False              MBD1_iVoltageL1Min
+age_L1
+164_MBD1_min._volt‐        Real          644.0    0.0         False   True       True True      False              MBD1_iVoltageL2Min
+age_L2
+165_MBD1_min._volt‐        Real          648.0    0.0         False   True       True True      False              MBD1_iVoltageL3Min
+age_L3
+166_MBD1_max._volt‐        Real          652.0    0.0         False   True       True True      False              MBD1_iVoltageL1Max
+age_L1
+167_MBD1_max._volt‐        Real          656.0    0.0         False   True       True True      False              MBD1_iVoltageL2Max
+age_L2
+168_MBD1_max._volt‐        Real          660.0    0.0         False   True       True True      False              MBD1_iVoltageL3Max
+age_L3
+169_MBD1_current_L1        Real          664.0    0.0         False   True       True   True    False              MBD1_iCurrentL1
+170_MBD1_current_L2        Real          668.0    0.0         False   True       True   True    False              MBD1_iCurrentL2
+171_MBD1_current_L3        Real          672.0    0.0         False   True       True   True    False              MBD1_iCurrentL3
+172_MBD1_min._cur‐         Real          676.0    0.0         False   True       True   True    False              MBD1_iCurrentL1Min
+rent_L1
+173_MBD1_min._cur‐         Real          680.0    0.0         False   True       True True      False              MBD1_iCurrentL2Min
+rent_L2
+ Totally Integrated
+Automation Portal
+
+Name                               Datentyp      Offset   Startwert   Rema‐   Erreich‐   Schr Sichtbar Einstell‐   Überwa‐ Kommentar
+nenz    bar aus    eib‐ in HMI   wert        chung
+HMI/OPC    bar Engineer‐
+UA         aus ing
+HMI/
+OPC
+UA
+174_MBD1_min._cur‐       Real          684.0    0.0         False   True       True True     False               MBD1_iCurrentL3Min
+rent_L3
+175_MBD1_max._cur‐       Real          688.0    0.0         False   True       True True      False              MBD1_iCurrentL1Max
+rent_L1
+176_MBD1_max._cur‐       Real          692.0    0.0         False   True       True True      False              MBD1_iCurrentL2Max
+rent_L2
+177_MBD1_max._cur‐       Real          696.0    0.0         False   True       True True      False              MBD1_iCurrentL3Max
+rent_L3
+178_MBD1_power_L1        Real          700.0    0.0         False   True       True   True    False              MBD1_iPowerL1
+179_MBD1_power_L2        Real          704.0    0.0         False   True       True   True    False              MBD1_iPowerL2
+180_MBD1_power_L3        Real          708.0    0.0         False   True       True   True    False              MBD1_iPowerL3
+181_MBD1_total_ac‐       Real          712.0    0.0         False   True       True   True    False              MBD1_iTotalW
+tive_power
+182_MBD1_total_appa‐     Real          716.0    0.0         False   True       True True      False              MBD1_iTatalVA
+rent_power
+183_MBD1_total_reac‐     Real          720.0    0.0         False   True       True True      False              MBD1_iTotalVar
+tive_power
+184_MBD1_total_ac‐       Real          724.0    0.0         False   True       True True      False              MBD1_iTotalWMax
+tive_power_max.
+185_MBD1_total_appa‐     Real          728.0    0.0         False   True       True True      False              MBD1_iTotalVAMax
+rent_power_max.
+186_MBD1_total_reac‐     Real          732.0    0.0         False   True       True True      False              MD1_iTotalVarMax
+tive_power_max.
+187_MBD1_total__pow‐     Real          736.0    0.0         False   True       True True      False              MBD1_iTotalPF
+er_factor
+188_MBD1_frequency       Real          740.0    0.0         False   True       True True      False              MBD1_iFrequency
+189_MBD1_min.frequen‐    Real          744.0    0.0         False   True       True True      False              MBD1_iFrequencyMin
+cy
+190_MBD1_max._fre‐       Real          748.0    0.0         False   True       True True      False              MBD1_iFrequencyMax
+quency
+191_MBD1_active_ener‐    Real          752.0    0.0         False   True       True True      False              MBD1_iActEnImp1
+gy_import
+192_MBD1_apparent_en‐    Real          756.0    0.0         False   True       True True      False              MBD1_iAppEnImp1
+ergy_import
+193_MBD1_reactive_en‐    Real          760.0    0.0         False   True       True True      False              MBD1_iReaEnImp1
+ergy_import
+194_MBD1_active__pow‐    Real          764.0    0.0         False   True       True True      False              MBD1_iActEnDemand
+er_demand
+195_MBD1_reac‐           Real          768.0    0.0         False   True       True True      False              MBD1_iReactEnDemand
+tive__power_demand
+196_Line_efficiency/     Real          772.0    0.0         False   True       True True      False              ANL_TimeRun
+time_line_running
+197_Line_efficiency/     Real          776.0    0.0         False   True       True True      False              ANL_TimeStop
+time_line_stopped
+198_Line_efficiency/     Real          780.0    0.0         False   True       True True      False              ANL_TimeGood
+time_good_product
+199_Energy_efficiency/   Real          784.0    0.0         False   True       True True      False              MBD1_iAppEnImp1 - MBD1_iAppE‐
+Actual_reel                                                                                                      nImpBak
+200_Energy_efficiency/   Real          788.0    0.0         False   True       True True      False              MBD1_iTotalVA
+Actual_power
+201_Reserve              Real          792.0    0.0         False   True       True   True    False
+202_Reserve              Real          796.0    0.0         False   True       True   True    False
+203_Reserve              Real          800.0    0.0         False   True       True   True    False
+204_Reserve              Real          804.0    0.0         False   True       True   True    False
+"From_Customer_5             ""FromCus_5""   808.0                False   True       True   True    False"
+Element_1                 Real          808.0    0.0         False   True       False True     False
+Element_2                 Real          812.0    0.0         False   True       False True     False
+Element_3                 Real          816.0    0.0         False   True       False True     False
+Element_4                 Real          820.0    0.0         False   True       False True     False
+Element_5                 Real          824.0    0.0         False   True       False True     False
+Element_6                 Real          828.0    0.0         False   True       False True     False
+Element_7                 Real          832.0    0.0         False   True       False True     False
+Element_8                 Real          836.0    0.0         False   True       False True     False
+Element_9                 Real          840.0    0.0         False   True       False True     False
+Element_10                Real          844.0    0.0         False   True       False True     False
+Element_11                Real          848.0    0.0         False   True       False True     False
+Element_12                Real          852.0    0.0         False   True       False True     False
+Element_13                Real          856.0    0.0         False   True       False True     False
+Element_14                Real          860.0    0.0         False   True       False True     False
+Element_15                Real          864.0    0.0         False   True       False True     False
+Element_16                Real          868.0    0.0         False   True       False True     False
+Element_17                Real          872.0    0.0         False   True       False True     False
+Element_18                Real          876.0    0.0         False   True       False True     False
+WatchDog                  Bool          880.0    false       False   True       False True     False              COS1_oWatchD
+Element_20                Bool          880.1    false       False   True       False True     False
+Element_21                Bool          880.2    false       False   True       False True     False
+Element_22                Bool          880.3    false       False   True       False True     False
+Element_23                Bool          880.4    false       False   True       False True     False
+ Totally Integrated
+Automation Portal
+
+Name                             Datentyp     Offset   Startwert   Rema‐   Erreich‐   Schr Sichtbar   Einstell‐   Überwa‐ Kommentar
+nenz    bar aus    eib‐ in HMI     wert        chung
+HMI/OPC    bar Engineer‐
+UA         aus ing
+HMI/
+OPC
+UA
+Element_24             Bool         880.5    false       False   True       False True      False
+Element_25             Bool         880.6    false       False   True       False True      False
+Element_26             Bool         880.7    false       False   True       False True      False
+Element_27             Bool         881.0    false       False   True       False True      False
+Element_28             Bool         881.1    false       False   True       False True      False
+Element_29             Bool         881.2    false       False   True       False True      False
+Element_30             Bool         881.3    false       False   True       False True      False
+Element_31             Bool         881.4    false       False   True       False True      False
+Element_32             Bool         881.5    false       False   True       False True      False
+Element_33             Bool         881.6    false       False   True       False True      False
+Element_34             Bool         881.7    false       False   True       False True      False
+Element_35             Bool         882.0    false       False   True       False True      False
+Element_36             Bool         882.1    false       False   True       False True      False
+Element_37             Bool         882.2    false       False   True       False True      False
+Element_38             Bool         882.3    false       False   True       False True      False
+Element_39             Bool         882.4    false       False   True       False True      False
+Element_40             Bool         882.5    false       False   True       False True      False
+Element_41             Bool         882.6    false       False   True       False True      False
+Element_42             Bool         882.7    false       False   True       False True      False
+Element_43             Bool         883.0    false       False   True       False True      False
+Element_44             Bool         883.1    false       False   True       False True      False
+Element_45             Bool         883.2    false       False   True       False True      False
+Element_46             Bool         883.3    false       False   True       False True      False
+Element_47             Bool         883.4    false       False   True       False True      False
+Element_48             Bool         883.5    false       False   True       False True      False
+Element_49             Bool         883.6    false       False   True       False True      False
+Element_50             Bool         883.7    false       False   True       False True      False
+"From_Customer_String      ""FromCus‐    884.0                False   True       True True       False"
+"String_1"""
+005_Reciepe_file_name   String[50]   884.0    ''          False   True       True   True     False               ANL_ActRec
+010_operator_name       String[50]   936.0    ''          False   True       True   True     False               ANL_OperName
+134_TUP2_reel_name      String[50]   988.0    ''          False   True       True   True     False               TUP2_oReelName
+140_TUP1_reel_name      String[50]   1040.0   ''          False   True       True   True     False               TUP1_oReelName
+"Res_Customer_String_2     ""FromCus‐    1092.0               False   True       True   True     False"
+"String_2"""
+Reserve_1               String[50]   1092.0   ''          False   True       True   True     False
+Reserve_2               String[50]   1144.0   ''          False   True       True   True     False
+Reserve_3               String[50]   1196.0   ''          False   True       True   True     False
+Reserve_4               String[50]   1248.0   ''          False   True       True   True     False
+

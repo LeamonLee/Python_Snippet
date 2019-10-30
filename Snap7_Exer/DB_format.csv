@@ -1,0 +1,13 @@
+Temperature,Real,0.0
+Cold,Bool,4.0
+Hot,Bool,4.1
+Rpis_to_Buy,Int,6.0
+Notes,String,8.0
+var_DINT,DInt,264.0
+var_UDINT,UDInt,268.0
+var_INT,Int,272.0
+var_UINT,UInt,274.0
+var_SINT,SInt,276.0
+var_USINT,USInt,277.0
+var_Byte,Byte,278.0
+var_DTL,DTL,280.0
