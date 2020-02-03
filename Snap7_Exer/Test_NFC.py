@@ -10,10 +10,10 @@ if __name__ == "__main__":
     
     # ===================  Connection  ======================
     plc = snap7.client.Client()
-    plc.connect('10.101.100.41', 0, 0)
+    plc.connect('10.101.100.41', 0, 0)              # needs to modify IP
 
     # ===================  Load Config  ======================
-    with open('NFC_DB_format.csv', 'r', encoding="utf-8") as f_read:
+    with open('NFC_DB_format.csv', 'r', encoding="utf-8") as f_read:        # needs to modify file name
         strContent = f_read.read()
     
     dictSortedDB_items = mySnap7.csv2dict(strContent)
@@ -25,7 +25,9 @@ if __name__ == "__main__":
     
     print("nLength: ", nLength)
     # Read the whole db value
-    objDB_Results = mySnap7.DBRead(plc, 1, nLength, dictSortedDB_items)
+    objDB_Results = mySnap7.DBRead(plc, 1, nLength, dictSortedDB_items)     # needs to modify DB_number
+
+    print("objDB_Results.eventCode: ",objDB_Results.eventCode)
 
     for tag_name, value in objDB_Results.__dict__.items():
         print(tag_name,": ", value)

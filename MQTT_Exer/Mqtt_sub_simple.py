@@ -11,10 +11,10 @@ def on_connect(client, userdata, flags, rc):
     # client.subscribe("topic1/#")
     # client.subscribe("/topic1")
     client.subscribe("/topic/1", qos=0)
-    client.subscribe("/topic/2", qos=0)
-    client.subscribe("/OEE/10.101.100.86/code/2001", qos=0)
-    client.subscribe("/OEE/10.101.100.86/code/2003", qos=0)
-    client.subscribe("/OEE/10.101.100.86/code/3000", qos=0)
+    # client.subscribe("/topic/2", qos=0)
+    # client.subscribe("/OEE/10.101.100.86/code/2001", qos=0)
+    # client.subscribe("/OEE/10.101.100.86/code/2003", qos=0)
+    # client.subscribe("/OEE/10.101.100.86/code/3000", qos=0)
     # client.subscribe("/plc/info", qos=1)
 
     
@@ -25,11 +25,11 @@ def on_message(client, userdata, msg):
     print(msg.payload)
     global nCount
     nCount += 1
-    print("nCount: ", nCount)
+    # print("nCount: ", nCount)
     # If the data type is bytes, have to convert into string first.
     # print(msg.payload.decode("utf-8"))
-    print(str(msg.payload, encoding="utf-8"))
-    print(str(msg.payload, encoding="utf-8")[2:])
+    # print(str(msg.payload, encoding="utf-8"))
+    # print(str(msg.payload, encoding="utf-8")[2:])
     # print("json.loads(msg.payload): ", json.loads(msg.payload))
 
 

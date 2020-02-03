@@ -28,14 +28,16 @@ time.sleep(1)
 
 while True:
     # client.publish("/topic/1", "Getting started with MQTT1")
-    time.sleep(1)
-    client.publish("/topic/1", "Hi there", qos=0)
-    time.sleep(1)
+    # time.sleep(1)
+    client.publish("/topic/1", "root/EX2_2019010108235960.jpg", qos=0)
+    
+    client.publish("aoi/image/realtime/job001/path", json.dumps(1), qos=0)
+    time.sleep(10)
     # client.publish("/topic/3", "Getting started with MQTT3")
     # client.publish("/topic/4", "Getting started with MQTT4")
     # client.publish("/topic/5", "1,2,3,4,5,6")
     # print("Publisher sent message to CloudMQTT")
-    time.sleep(1)
+    # time.sleep(1)
 
 client.loop_stop()
 client.disconnect()
